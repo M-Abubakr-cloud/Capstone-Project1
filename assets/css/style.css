@@ -1,0 +1,443 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0 15%;
+}
+
+/* ----------Buttons */
+
+button {
+  font-family: "poppins";
+}
+
+.s1-content .btn {
+  background-color: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 2.7% 7%;
+}
+
+.s1-content .btn:hover {
+  background-color: #079df3;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+}
+
+#design .btn {
+  background-image: linear-gradient(
+    to left,
+    #00d2ff 30%,
+    #3a7bd5 100%,
+    #00d2ff 30%
+  );
+  background-size: auto 200%;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #eee;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 10px 0;
+  padding: 2% 7%;
+}
+
+/* cta-Buttons */
+.btn-label {
+  position: relative;
+  left: -12px;
+  float: left;
+  padding: 8px 12px;
+}
+
+#cta button p {
+  color: black;
+  font-size: 75%;
+  margin-top: -5px;
+  margin-bottom: 11px;
+}
+
+#cta button {
+  padding-bottom: 0%;
+  margin: 50px 45px 0px;
+}
+
+.btn-text-bold {
+  font-size: 140%;
+}
+
+#cta button i {
+  font-size: 220%;
+  color: #08a4f4;
+}
+
+.icons8-android-os {
+  display: inline-block;
+  width: 40px;
+  height: 46px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTIiIGhlaWdodD0iNTIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxLjUsMjEuNSkgc2NhbGUoMC43NSwwLjc1KSI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub25lIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPjxnIGZpbGw9IiMwOGE0ZjQiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTE1OS41NzAzMSw2NC41MjU4NHY0MS41NTI4OGMwLDUuODY1OTkgLTQuNjc3MjgsMTAuNjIwNzkgLTEwLjQ2NTc0LDEwLjYyMDc5Yy01Ljc2MjYyLDAgLTEwLjQzOTksLTQuNzU0ODEgLTEwLjQzOTksLTEwLjYyMDc5di00MS41NTI4OGMwLC01Ljg2NTk4IDQuNjUxNDQsLTEwLjYyMDc5IDEwLjQzOTksLTEwLjYyMDc5YzUuNzg4NDYsMCAxMC40NjU3NCw0Ljc1NDgxIDEwLjQ2NTc0LDEwLjYyMDc5ek0yMi44Njk1OSw1My45MDUwNWMtNS43NjI2MiwwIC0xMC40Mzk5LDQuNzU0ODEgLTEwLjQzOTksMTAuNjIwNzl2NDEuNTI3MDRjMCw1Ljg2NTk5IDQuNjc3MjksMTAuNjQ2NjMgMTAuNDM5OSwxMC42NDY2M2M1LjgxNDMxLDAgMTAuNDY1NzUsLTQuNzgwNjUgMTAuNDY1NzUsLTEwLjY0NjYzdi00MS41MjcwNGMwLC01Ljg2NTk4IC00LjY1MTQ0LC0xMC42MjA3OSAtMTAuNDY1NzUsLTEwLjYyMDc5ek0zOS42NDA2MywxMzAuMDg1MzRjMCw0LjUyMjIzIDMuNjY5NDcsOC4xNjU4NyA4LjE2NTg3LDguMTY1ODdoOS4zMjg3MnYyMy4xMjhjMCw1Ljg2NTk5IDQuNzAzMTIsMTAuNjIwNzkgMTAuNDY1NzQsMTAuNjIwNzljNS43ODg0NiwwIDEwLjQ2NTc0LC00Ljc1NDgxIDEwLjQ2NTc0LC0xMC42MjA3OXYtMjMuMTI4aDE2LjI4MDA1djIzLjEyOGMwLDUuODY1OTkgNC43MDMxMiwxMC42MjA3OSAxMC40NjU3NCwxMC42MjA3OWM1Ljc4ODQ2LDAgMTAuNDY1NzQsLTQuNzU0ODEgMTAuNDY1NzQsLTEwLjYyMDc5di0yMy4xMjhoOS4zMjg3M2M0LjQ5NjM5LDAgOC4xNjU4NywtMy42MTc3OSA4LjE2NTg3LC04LjE0MDAzdi03NS44OTYwM2gtOTMuMTMyMjF6TTEzMi41NDAyNiw0Ny40NzA1NWgtOTMuMTA2MzdjMS4yMTQ1NCwtMTQuMTM1MjEgMTAuODAxNjgsLTI2LjIwMzEyIDI0LjQ5NzYsLTMyLjU2MDFsLTguNjA1MTcsLTEyLjUwNzIxYy0wLjUxNjgzLC0wLjcyMzU2IC0wLjM4NzYyLC0xLjcwNTUzIDAuMjU4NDIsLTIuMTcwNjdjMC42NzE4NywtMC40MzkzIDEuNjI4MDEsLTAuMjMyNTcgMi4xNzA2NywwLjUxNjgybDguOTE1MjYsMTIuOTcyMzZjNS44OTE4MywtMi4zMjU3MiAxMi40Mjk2OSwtMy42MTc3OSAxOS4zMjkzMywtMy42MTc3OWM2Ljg5OTY0LDAgMTMuNDExNjYsMS4yOTIwNiAxOS4zMjkzMywzLjYxNzc5bDguOTE1MjYsLTEyLjk3MjM2YzAuNTQyNjcsLTAuNzQ5NCAxLjQ5ODgsLTAuOTU2MTMgMi4xNzA2NywtMC41MTY4MmMwLjY0NjA0LDAuNDY1MTUgMC43NzUyNCwxLjQ0NzExIDAuMjU4NDIsMi4xNzA2N2wtOC42MDUxNywxMi41MDcyMWMxMy42NzAwNyw2LjM1Njk3IDIzLjI4MzA1LDE4LjQyNDg4IDI0LjQ3MTc1LDMyLjU2MDF6TTcxLjUyODg1LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMzI1NzIsLTUuMTE2NTkgLTUuMTY4MjcsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNjgyNywyLjI5OTg4IC01LjE2ODI3LDUuMTE2NTljMCwyLjg2ODM4IDIuMzI1NzIsNS4xNjgyNyA1LjE2ODI3LDUuMTY4MjdjMi44NDI1NSwwIDUuMTY4MjcsLTIuMjk5ODggNS4xNjgyNywtNS4xNjgyN3pNMTExLjQyNzg4LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMjk5ODgsLTUuMTE2NTkgLTUuMTQyNDMsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNDI0MiwyLjI5OTg4IC01LjE0MjQyLDUuMTE2NTljMCwyLjg2ODM4IDIuMjk5ODgsNS4xNjgyNyA1LjE0MjQyLDUuMTY4MjdjMi44NDI1NSwwIDUuMTQyNDMsLTIuMjk5ODggNS4xNDI0MywtNS4xNjgyN3oiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4=")
+    50% 50% no-repeat;
+  background-size: 150%;
+}
+
+#cta button:hover .icons8-android-os {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTIiIGhlaWdodD0iNTIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxLjUsMjEuNSkgc2NhbGUoMC43NSwwLjc1KSI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub25lIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTE1OS41NzAzMSw2NC41MjU4NHY0MS41NTI4OGMwLDUuODY1OTkgLTQuNjc3MjgsMTAuNjIwNzkgLTEwLjQ2NTc0LDEwLjYyMDc5Yy01Ljc2MjYyLDAgLTEwLjQzOTksLTQuNzU0ODEgLTEwLjQzOTksLTEwLjYyMDc5di00MS41NTI4OGMwLC01Ljg2NTk4IDQuNjUxNDQsLTEwLjYyMDc5IDEwLjQzOTksLTEwLjYyMDc5YzUuNzg4NDYsMCAxMC40NjU3NCw0Ljc1NDgxIDEwLjQ2NTc0LDEwLjYyMDc5ek0yMi44Njk1OSw1My45MDUwNWMtNS43NjI2MiwwIC0xMC40Mzk5LDQuNzU0ODEgLTEwLjQzOTksMTAuNjIwNzl2NDEuNTI3MDRjMCw1Ljg2NTk5IDQuNjc3MjksMTAuNjQ2NjMgMTAuNDM5OSwxMC42NDY2M2M1LjgxNDMxLDAgMTAuNDY1NzUsLTQuNzgwNjUgMTAuNDY1NzUsLTEwLjY0NjYzdi00MS41MjcwNGMwLC01Ljg2NTk4IC00LjY1MTQ0LC0xMC42MjA3OSAtMTAuNDY1NzUsLTEwLjYyMDc5ek0zOS42NDA2MywxMzAuMDg1MzRjMCw0LjUyMjIzIDMuNjY5NDcsOC4xNjU4NyA4LjE2NTg3LDguMTY1ODdoOS4zMjg3MnYyMy4xMjhjMCw1Ljg2NTk5IDQuNzAzMTIsMTAuNjIwNzkgMTAuNDY1NzQsMTAuNjIwNzljNS43ODg0NiwwIDEwLjQ2NTc0LC00Ljc1NDgxIDEwLjQ2NTc0LC0xMC42MjA3OXYtMjMuMTI4aDE2LjI4MDA1djIzLjEyOGMwLDUuODY1OTkgNC43MDMxMiwxMC42MjA3OSAxMC40NjU3NCwxMC42MjA3OWM1Ljc4ODQ2LDAgMTAuNDY1NzQsLTQuNzU0ODEgMTAuNDY1NzQsLTEwLjYyMDc5di0yMy4xMjhoOS4zMjg3M2M0LjQ5NjM5LDAgOC4xNjU4NywtMy42MTc3OSA4LjE2NTg3LC04LjE0MDAzdi03NS44OTYwM2gtOTMuMTMyMjF6TTEzMi41NDAyNiw0Ny40NzA1NWgtOTMuMTA2MzdjMS4yMTQ1NCwtMTQuMTM1MjEgMTAuODAxNjgsLTI2LjIwMzEyIDI0LjQ5NzYsLTMyLjU2MDFsLTguNjA1MTcsLTEyLjUwNzIxYy0wLjUxNjgzLC0wLjcyMzU2IC0wLjM4NzYyLC0xLjcwNTUzIDAuMjU4NDIsLTIuMTcwNjdjMC42NzE4NywtMC40MzkzIDEuNjI4MDEsLTAuMjMyNTcgMi4xNzA2NywwLjUxNjgybDguOTE1MjYsMTIuOTcyMzZjNS44OTE4MywtMi4zMjU3MiAxMi40Mjk2OSwtMy42MTc3OSAxOS4zMjkzMywtMy42MTc3OWM2Ljg5OTY0LDAgMTMuNDExNjYsMS4yOTIwNiAxOS4zMjkzMywzLjYxNzc5bDguOTE1MjYsLTEyLjk3MjM2YzAuNTQyNjcsLTAuNzQ5NCAxLjQ5ODgsLTAuOTU2MTMgMi4xNzA2NywtMC41MTY4MmMwLjY0NjA0LDAuNDY1MTUgMC43NzUyNCwxLjQ0NzExIDAuMjU4NDIsMi4xNzA2N2wtOC42MDUxNywxMi41MDcyMWMxMy42NzAwNyw2LjM1Njk3IDIzLjI4MzA1LDE4LjQyNDg4IDI0LjQ3MTc1LDMyLjU2MDF6TTcxLjUyODg1LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMzI1NzIsLTUuMTE2NTkgLTUuMTY4MjcsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNjgyNywyLjI5OTg4IC01LjE2ODI3LDUuMTE2NTljMCwyLjg2ODM4IDIuMzI1NzIsNS4xNjgyNyA1LjE2ODI3LDUuMTY4MjdjMi44NDI1NSwwIDUuMTY4MjcsLTIuMjk5ODggNS4xNjgyNywtNS4xNjgyN3pNMTExLjQyNzg4LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMjk5ODgsLTUuMTE2NTkgLTUuMTQyNDMsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNDI0MiwyLjI5OTg4IC01LjE0MjQyLDUuMTE2NTljMCwyLjg2ODM4IDIuMjk5ODgsNS4xNjgyNyA1LjE0MjQyLDUuMTY4MjdjMi44NDI1NSwwIDUuMTQyNDMsLTIuMjk5ODggNS4xNDI0MywtNS4xNjgyN3oiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4=")
+    50% 50% no-repeat;
+  background-size: 150%;
+}
+
+#cta button:hover {
+  border: 1.5px solid #fff;
+  box-shadow: -1px 10px 40px -20px rgba(0, 0, 0, 1);
+  background-color: #08a4f4;
+  color: #fff;
+}
+
+#cta button:hover p,
+#cta button:hover i {
+  color: #fff;
+}
+
+/*------ Navbar */
+
+#header,
+#cta {
+  background: linear-gradient(to left, #09c6f9, #045de9);
+}
+
+.nav-container {
+  background-color: #fff;
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.nav-link,
+.dropdown-item {
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/*--- Section 1 ----*/
+
+#s1 {
+  padding: 19% 0 16%;
+  color: #fff;
+  font-family: "poppins";
+}
+
+.s1-content {
+  max-width: 39.3%;
+  margin-right: 10.7%;
+}
+
+.s1-content p {
+  color: #fff;
+  font-weight: 300;
+  font-size: small;
+  line-height: 1.7;
+}
+
+.s1-content h1 {
+  font-size: 3rem;
+}
+
+/* Title image */
+
+.title-image {
+  width: 91%;
+  height: 110%;
+  position: relative;
+  bottom: 10%;
+  left: 11%;
+}
+
+/* =====Services Section */
+
+#services {
+  padding: 10% 0;
+  background-color: #fff;
+}
+
+#services i {
+  border: 2px solid #9dd2f1;
+  border-radius: 100%;
+  color: #09b8f7;
+  font-size: 1.9rem;
+  margin: 16% 0;
+  padding: 20px;
+}
+
+#services h4 {
+  font-weight: 700;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.service-head-para {
+  margin: 0 19% 5%;
+}
+
+/* ------------Design Section */
+
+#design {
+  background-color: #faf9fe;
+  padding: 12% 0;
+}
+
+.design-img {
+  max-width: 100%;
+}
+
+#design h2 {
+  width: 78%;
+}
+
+/* ---------- Features Section */
+
+#features {
+  padding: 12% 0;
+}
+.feature-boxes {
+  background-color: #faf9fe;
+  border: 8px solid #fff;
+}
+
+.feature-boxes:hover {
+  background-image: linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
+  color: #fff;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.feature-imgs {
+  max-width: 20%;
+  margin: 15% 0% 6%;
+}
+
+.feature-boxes h4 {
+  font-size: 1rem;
+  margin-bottom: 15%;
+}
+
+/*-------------- Call to Action */
+
+#cta,
+.cta-para {
+  color: #fff;
+}
+
+#cta {
+  padding: 6% 0;
+}
+
+.cta-para {
+  margin: 2% 0;
+}
+
+/* ---------------Footer */
+
+#footer {
+  padding: 5% 0;
+  background-color: #222222;
+}
+
+/* Footer Top */
+.sub {
+  background-image: linear-gradient(to left, #00d2ff 60%, #3ea8ff 100%);
+  color: #fff;
+  font-size: 87%;
+  letter-spacing: 0px;
+  font-weight: 600;
+  padding: 6% 16%;
+}
+
+#footer h4 {
+  margin-bottom: 7%;
+}
+
+.toptrend-nav li {
+  margin-top: 5.6%;
+  font-size: 0.83rem;
+}
+
+.toptrend-nav li:hover {
+  color: #09b8f7;
+  cursor: pointer;
+}
+
+.instafeed {
+  margin: -5px;
+}
+
+.instafeed li {
+  margin: 3px;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+  margin-top: 10%;
+}
+
+.footer-bottom i.fa-heart-o,
+.footer-bottom a {
+  color: #00d2ff;
+}
+
+.footer-social i {
+  padding: 14px;
+  font-size: 0.8rem;
+  color: #a0a0a2;
+  background-color: black;
+}
+
+.footer-social i:hover {
+  background-color: #09b8f7;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* -------------Pricing Section*/
+#pricing {
+  background-color: #f9f9ff;
+  padding: 8% 0;
+}
+
+.single-price {
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  margin-top: 30px;
+}
+
+.top-sec,
+.bottom-sec,
+.end-sec {
+  border-bottom: 1px solid #eee;
+  padding: 40px 40px 22px 40px;
+}
+
+.end-sec li {
+  margin-bottom: 20px;
+}
+.end-sec li:last-child {
+  margin-bottom: 30px;
+}
+
+#pricing button {
+  background: #222;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.single-price:hover {
+  background-image: linear-gradient(2deg, #3ea7ff 0%, #42d1ff 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: -1px 10px 40px -20px rgba(0, 0, 0, 1);
+}
+#pricing .single-price:hover button {
+  color: black;
+  background-color: #fff;
+}
+.single-price:hover p {
+  color: #fff;
+}
+
+/*--------- FAQ Section */
+
+#faq {
+  padding: 10% 0;
+}
+
+.facts {
+  padding-right: 10%;
+}
+
+.facts h2 {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3ea7ff;
+}
+
+.faq-content {
+  padding-left: 5%;
+}
+
+.faq-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 4%;
+}
+
+.faq-content p {
+  max-width: 90%;
+}
+
+/* Video Sec */
+#video-sec {
+  padding: 200px 0 60px 0;
+  background: url(../images/video-bg.jpg.webp) no-repeat center center/cover;
+  position: relative;
+}
+
+.blur {
+  opacity: 0.6;
+  background: linear-gradient(0deg, #09c6f9, #045de9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.video-content {
+  position: relative;
+  z-index: 2;
+}
+.video-content a {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.video-desc {
+  margin-top: 120px;
+}
+.video-desc h2 {
+  font-size: 1.3rem;
+}
+
+/* -----------Carousel Sec */
+#carousel {
+  padding: 10% 0;
+}
