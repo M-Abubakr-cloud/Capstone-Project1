@@ -29,7 +29,11 @@ a {
   padding: 0 15%;
 }
 
-/* ----------Buttons */
+.section-gap {
+  padding: 10% 0;
+}
+
+/* ============= Buttons */
 
 button {
   font-family: "poppins";
@@ -43,12 +47,6 @@ button {
   padding: 2.7% 7%;
 }
 
-.s1-content .btn:hover {
-  background-color: #079df3;
-  color: #fff;
-  box-shadow: 0 0 20px #eee;
-}
-
 #design .btn {
   background-image: linear-gradient(
     to left,
@@ -58,7 +56,6 @@ button {
   );
   background-size: auto 200%;
   border-radius: 30px;
-  box-shadow: 0 0 20px #eee;
   color: white;
   font-weight: 700;
   font-size: 0.8rem;
@@ -104,27 +101,9 @@ button {
   background-size: 150%;
 }
 
-#cta button:hover .icons8-android-os {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTIiIGhlaWdodD0iNTIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxLjUsMjEuNSkgc2NhbGUoMC43NSwwLjc1KSI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub25lIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTE1OS41NzAzMSw2NC41MjU4NHY0MS41NTI4OGMwLDUuODY1OTkgLTQuNjc3MjgsMTAuNjIwNzkgLTEwLjQ2NTc0LDEwLjYyMDc5Yy01Ljc2MjYyLDAgLTEwLjQzOTksLTQuNzU0ODEgLTEwLjQzOTksLTEwLjYyMDc5di00MS41NTI4OGMwLC01Ljg2NTk4IDQuNjUxNDQsLTEwLjYyMDc5IDEwLjQzOTksLTEwLjYyMDc5YzUuNzg4NDYsMCAxMC40NjU3NCw0Ljc1NDgxIDEwLjQ2NTc0LDEwLjYyMDc5ek0yMi44Njk1OSw1My45MDUwNWMtNS43NjI2MiwwIC0xMC40Mzk5LDQuNzU0ODEgLTEwLjQzOTksMTAuNjIwNzl2NDEuNTI3MDRjMCw1Ljg2NTk5IDQuNjc3MjksMTAuNjQ2NjMgMTAuNDM5OSwxMC42NDY2M2M1LjgxNDMxLDAgMTAuNDY1NzUsLTQuNzgwNjUgMTAuNDY1NzUsLTEwLjY0NjYzdi00MS41MjcwNGMwLC01Ljg2NTk4IC00LjY1MTQ0LC0xMC42MjA3OSAtMTAuNDY1NzUsLTEwLjYyMDc5ek0zOS42NDA2MywxMzAuMDg1MzRjMCw0LjUyMjIzIDMuNjY5NDcsOC4xNjU4NyA4LjE2NTg3LDguMTY1ODdoOS4zMjg3MnYyMy4xMjhjMCw1Ljg2NTk5IDQuNzAzMTIsMTAuNjIwNzkgMTAuNDY1NzQsMTAuNjIwNzljNS43ODg0NiwwIDEwLjQ2NTc0LC00Ljc1NDgxIDEwLjQ2NTc0LC0xMC42MjA3OXYtMjMuMTI4aDE2LjI4MDA1djIzLjEyOGMwLDUuODY1OTkgNC43MDMxMiwxMC42MjA3OSAxMC40NjU3NCwxMC42MjA3OWM1Ljc4ODQ2LDAgMTAuNDY1NzQsLTQuNzU0ODEgMTAuNDY1NzQsLTEwLjYyMDc5di0yMy4xMjhoOS4zMjg3M2M0LjQ5NjM5LDAgOC4xNjU4NywtMy42MTc3OSA4LjE2NTg3LC04LjE0MDAzdi03NS44OTYwM2gtOTMuMTMyMjF6TTEzMi41NDAyNiw0Ny40NzA1NWgtOTMuMTA2MzdjMS4yMTQ1NCwtMTQuMTM1MjEgMTAuODAxNjgsLTI2LjIwMzEyIDI0LjQ5NzYsLTMyLjU2MDFsLTguNjA1MTcsLTEyLjUwNzIxYy0wLjUxNjgzLC0wLjcyMzU2IC0wLjM4NzYyLC0xLjcwNTUzIDAuMjU4NDIsLTIuMTcwNjdjMC42NzE4NywtMC40MzkzIDEuNjI4MDEsLTAuMjMyNTcgMi4xNzA2NywwLjUxNjgybDguOTE1MjYsMTIuOTcyMzZjNS44OTE4MywtMi4zMjU3MiAxMi40Mjk2OSwtMy42MTc3OSAxOS4zMjkzMywtMy42MTc3OWM2Ljg5OTY0LDAgMTMuNDExNjYsMS4yOTIwNiAxOS4zMjkzMywzLjYxNzc5bDguOTE1MjYsLTEyLjk3MjM2YzAuNTQyNjcsLTAuNzQ5NCAxLjQ5ODgsLTAuOTU2MTMgMi4xNzA2NywtMC41MTY4MmMwLjY0NjA0LDAuNDY1MTUgMC43NzUyNCwxLjQ0NzExIDAuMjU4NDIsMi4xNzA2N2wtOC42MDUxNywxMi41MDcyMWMxMy42NzAwNyw2LjM1Njk3IDIzLjI4MzA1LDE4LjQyNDg4IDI0LjQ3MTc1LDMyLjU2MDF6TTcxLjUyODg1LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMzI1NzIsLTUuMTE2NTkgLTUuMTY4MjcsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNjgyNywyLjI5OTg4IC01LjE2ODI3LDUuMTE2NTljMCwyLjg2ODM4IDIuMzI1NzIsNS4xNjgyNyA1LjE2ODI3LDUuMTY4MjdjMi44NDI1NSwwIDUuMTY4MjcsLTIuMjk5ODggNS4xNjgyNywtNS4xNjgyN3pNMTExLjQyNzg4LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMjk5ODgsLTUuMTE2NTkgLTUuMTQyNDMsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNDI0MiwyLjI5OTg4IC01LjE0MjQyLDUuMTE2NTljMCwyLjg2ODM4IDIuMjk5ODgsNS4xNjgyNyA1LjE0MjQyLDUuMTY4MjdjMi44NDI1NSwwIDUuMTQyNDMsLTIuMjk5ODggNS4xNDI0MywtNS4xNjgyN3oiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4=")
-    50% 50% no-repeat;
-  background-size: 150%;
-}
+/* ============= Navbar */
 
-#cta button:hover {
-  border: 1.5px solid #fff;
-  box-shadow: -1px 10px 40px -20px rgba(0, 0, 0, 1);
-  background-color: #08a4f4;
-  color: #fff;
-}
-
-#cta button:hover p,
-#cta button:hover i {
-  color: #fff;
-}
-
-/*------ Navbar */
-
-#header,
+#s1,
 #cta {
   background: linear-gradient(to left, #09c6f9, #045de9);
 }
@@ -145,7 +124,7 @@ button {
   font-weight: 700;
 }
 
-/*--- Section 1 ----*/
+/* ============= Section 1*/
 
 #s1 {
   padding: 19% 0 16%;
@@ -179,10 +158,9 @@ button {
   left: 11%;
 }
 
-/* =====Services Section */
+/* ============= Services Section */
 
 #services {
-  padding: 10% 0;
   background-color: #fff;
 }
 
@@ -205,11 +183,10 @@ button {
   margin: 0 19% 5%;
 }
 
-/* ------------Design Section */
+/* ============= Design Section */
 
 #design {
   background-color: #faf9fe;
-  padding: 12% 0;
 }
 
 .design-img {
@@ -220,21 +197,47 @@ button {
   width: 78%;
 }
 
-/* ---------- Features Section */
-
-#features {
-  padding: 12% 0;
+/* ============= Video Sec */
+#video-sec {
+  padding: 200px 0 60px 0;
+  background: url(../images/video-bg.jpg.webp) no-repeat center center/cover;
+  position: relative;
 }
+
+.blur {
+  opacity: 0.6;
+  background: linear-gradient(0deg, #09c6f9, #045de9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.video-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-content a {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.video-desc {
+  margin-top: 120px;
+}
+
+.video-desc h2 {
+  font-size: 1.3rem;
+}
+
+/* ============= Features Section */
+
 .feature-boxes {
   background-color: #faf9fe;
   border: 8px solid #fff;
-}
-
-.feature-boxes:hover {
-  background-image: linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
-  color: #fff;
-  transition: all 0.2s ease-out;
-  cursor: pointer;
 }
 
 .feature-imgs {
@@ -247,88 +250,9 @@ button {
   margin-bottom: 15%;
 }
 
-/*-------------- Call to Action */
-
-#cta,
-.cta-para {
-  color: #fff;
-}
-
-#cta {
-  padding: 6% 0;
-}
-
-.cta-para {
-  margin: 2% 0;
-}
-
-/* ---------------Footer */
-
-#footer {
-  padding: 5% 0;
-  background-color: #222222;
-}
-
-/* Footer Top */
-.sub {
-  background-image: linear-gradient(to left, #00d2ff 60%, #3ea8ff 100%);
-  color: #fff;
-  font-size: 87%;
-  letter-spacing: 0px;
-  font-weight: 600;
-  padding: 6% 16%;
-}
-
-#footer h4 {
-  margin-bottom: 7%;
-}
-
-.toptrend-nav li {
-  margin-top: 5.6%;
-  font-size: 0.83rem;
-}
-
-.toptrend-nav li:hover {
-  color: #09b8f7;
-  cursor: pointer;
-}
-
-.instafeed {
-  margin: -5px;
-}
-
-.instafeed li {
-  margin: 3px;
-}
-
-/* Footer Bottom */
-
-.footer-bottom {
-  margin-top: 10%;
-}
-
-.footer-bottom i.fa-heart-o,
-.footer-bottom a {
-  color: #00d2ff;
-}
-
-.footer-social i {
-  padding: 14px;
-  font-size: 0.8rem;
-  color: #a0a0a2;
-  background-color: black;
-}
-
-.footer-social i:hover {
-  background-color: #09b8f7;
-  color: #fff;
-  cursor: pointer;
-}
-
-/* -------------Pricing Section*/
+/* ============= Pricing Section*/
 #pricing {
   background-color: #f9f9ff;
-  padding: 8% 0;
 }
 
 .single-price {
@@ -361,25 +285,7 @@ button {
   padding-right: 40px;
 }
 
-.single-price:hover {
-  background-image: linear-gradient(2deg, #3ea7ff 0%, #42d1ff 100%);
-  color: #fff;
-  cursor: pointer;
-  box-shadow: -1px 10px 40px -20px rgba(0, 0, 0, 1);
-}
-#pricing .single-price:hover button {
-  color: black;
-  background-color: #fff;
-}
-.single-price:hover p {
-  color: #fff;
-}
-
-/*--------- FAQ Section */
-
-#faq {
-  padding: 10% 0;
-}
+/* ============= FAQ Section */
 
 .facts {
   padding-right: 10%;
@@ -404,40 +310,129 @@ button {
   max-width: 90%;
 }
 
-/* Video Sec */
-#video-sec {
-  padding: 200px 0 60px 0;
-  background: url(../images/video-bg.jpg.webp) no-repeat center center/cover;
-  position: relative;
+/* ============= Call to Action */
+
+#cta,
+.cta-para {
+  color: #fff;
 }
 
-.blur {
-  opacity: 0.6;
-  background: linear-gradient(0deg, #09c6f9, #045de9);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+.cta-para {
+  margin: 2% 0;
 }
 
-.video-content {
-  position: relative;
-  z-index: 2;
-}
-.video-content a {
-  margin-bottom: 20px;
-  display: inline-block;
-}
-.video-desc {
-  margin-top: 120px;
-}
-.video-desc h2 {
-  font-size: 1.3rem;
+/* ============= Footer */
+
+#footer {
+  background-color: #222222;
 }
 
-/* -----------Carousel Sec */
-#carousel {
-  padding: 10% 0;
+/* Footer Top */
+.sub {
+  background-image: linear-gradient(to left, #00d2ff 60%, #3ea8ff 100%);
+  color: #fff;
+  font-size: 87%;
+  letter-spacing: 0px;
+  font-weight: 600;
+  padding: 6% 16%;
+}
+
+#footer h4 {
+  margin-bottom: 7%;
+}
+
+.toptrend-nav li {
+  margin-top: 5.6%;
+  font-size: 0.83rem;
+}
+
+.instafeed {
+  margin: -5px;
+}
+
+.instafeed li {
+  margin: 3px;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+  margin-top: 10%;
+}
+
+.footer-bottom i.fa-heart-o,
+.footer-bottom a {
+  color: #00d2ff;
+}
+
+.footer-social i {
+  padding: 14px;
+  font-size: 0.8rem;
+  color: #a0a0a2;
+  background-color: black;
+}
+
+/* -------------Hovers */
+
+/* s1-hover */
+.s1-content .btn:hover {
+  background-color: #079df3;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+}
+
+/* CTA Buttons hover */
+#cta button:hover .icons8-android-os {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTIiIGhlaWdodD0iNTIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxLjUsMjEuNSkgc2NhbGUoMC43NSwwLjc1KSI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub25lIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTE1OS41NzAzMSw2NC41MjU4NHY0MS41NTI4OGMwLDUuODY1OTkgLTQuNjc3MjgsMTAuNjIwNzkgLTEwLjQ2NTc0LDEwLjYyMDc5Yy01Ljc2MjYyLDAgLTEwLjQzOTksLTQuNzU0ODEgLTEwLjQzOTksLTEwLjYyMDc5di00MS41NTI4OGMwLC01Ljg2NTk4IDQuNjUxNDQsLTEwLjYyMDc5IDEwLjQzOTksLTEwLjYyMDc5YzUuNzg4NDYsMCAxMC40NjU3NCw0Ljc1NDgxIDEwLjQ2NTc0LDEwLjYyMDc5ek0yMi44Njk1OSw1My45MDUwNWMtNS43NjI2MiwwIC0xMC40Mzk5LDQuNzU0ODEgLTEwLjQzOTksMTAuNjIwNzl2NDEuNTI3MDRjMCw1Ljg2NTk5IDQuNjc3MjksMTAuNjQ2NjMgMTAuNDM5OSwxMC42NDY2M2M1LjgxNDMxLDAgMTAuNDY1NzUsLTQuNzgwNjUgMTAuNDY1NzUsLTEwLjY0NjYzdi00MS41MjcwNGMwLC01Ljg2NTk4IC00LjY1MTQ0LC0xMC42MjA3OSAtMTAuNDY1NzUsLTEwLjYyMDc5ek0zOS42NDA2MywxMzAuMDg1MzRjMCw0LjUyMjIzIDMuNjY5NDcsOC4xNjU4NyA4LjE2NTg3LDguMTY1ODdoOS4zMjg3MnYyMy4xMjhjMCw1Ljg2NTk5IDQuNzAzMTIsMTAuNjIwNzkgMTAuNDY1NzQsMTAuNjIwNzljNS43ODg0NiwwIDEwLjQ2NTc0LC00Ljc1NDgxIDEwLjQ2NTc0LC0xMC42MjA3OXYtMjMuMTI4aDE2LjI4MDA1djIzLjEyOGMwLDUuODY1OTkgNC43MDMxMiwxMC42MjA3OSAxMC40NjU3NCwxMC42MjA3OWM1Ljc4ODQ2LDAgMTAuNDY1NzQsLTQuNzU0ODEgMTAuNDY1NzQsLTEwLjYyMDc5di0yMy4xMjhoOS4zMjg3M2M0LjQ5NjM5LDAgOC4xNjU4NywtMy42MTc3OSA4LjE2NTg3LC04LjE0MDAzdi03NS44OTYwM2gtOTMuMTMyMjF6TTEzMi41NDAyNiw0Ny40NzA1NWgtOTMuMTA2MzdjMS4yMTQ1NCwtMTQuMTM1MjEgMTAuODAxNjgsLTI2LjIwMzEyIDI0LjQ5NzYsLTMyLjU2MDFsLTguNjA1MTcsLTEyLjUwNzIxYy0wLjUxNjgzLC0wLjcyMzU2IC0wLjM4NzYyLC0xLjcwNTUzIDAuMjU4NDIsLTIuMTcwNjdjMC42NzE4NywtMC40MzkzIDEuNjI4MDEsLTAuMjMyNTcgMi4xNzA2NywwLjUxNjgybDguOTE1MjYsMTIuOTcyMzZjNS44OTE4MywtMi4zMjU3MiAxMi40Mjk2OSwtMy42MTc3OSAxOS4zMjkzMywtMy42MTc3OWM2Ljg5OTY0LDAgMTMuNDExNjYsMS4yOTIwNiAxOS4zMjkzMywzLjYxNzc5bDguOTE1MjYsLTEyLjk3MjM2YzAuNTQyNjcsLTAuNzQ5NCAxLjQ5ODgsLTAuOTU2MTMgMi4xNzA2NywtMC41MTY4MmMwLjY0NjA0LDAuNDY1MTUgMC43NzUyNCwxLjQ0NzExIDAuMjU4NDIsMi4xNzA2N2wtOC42MDUxNywxMi41MDcyMWMxMy42NzAwNyw2LjM1Njk3IDIzLjI4MzA1LDE4LjQyNDg4IDI0LjQ3MTc1LDMyLjU2MDF6TTcxLjUyODg1LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMzI1NzIsLTUuMTE2NTkgLTUuMTY4MjcsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNjgyNywyLjI5OTg4IC01LjE2ODI3LDUuMTE2NTljMCwyLjg2ODM4IDIuMzI1NzIsNS4xNjgyNyA1LjE2ODI3LDUuMTY4MjdjMi44NDI1NSwwIDUuMTY4MjcsLTIuMjk5ODggNS4xNjgyNywtNS4xNjgyN3pNMTExLjQyNzg4LDI5LjQwNzQ2YzAsLTIuODQyNTUgLTIuMjk5ODgsLTUuMTE2NTkgLTUuMTQyNDMsLTUuMTE2NTljLTIuODQyNTQsMCAtNS4xNDI0MiwyLjI5OTg4IC01LjE0MjQyLDUuMTE2NTljMCwyLjg2ODM4IDIuMjk5ODgsNS4xNjgyNyA1LjE0MjQyLDUuMTY4MjdjMi44NDI1NSwwIDUuMTQyNDMsLTIuMjk5ODggNS4xNDI0MywtNS4xNjgyN3oiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4=")
+    50% 50% no-repeat;
+  background-size: 150%;
+}
+
+#cta button:hover {
+  border: 1.5px solid #fff;
+  box-shadow: -1px 10px 40px -20px rgba(0, 0, 0, 1);
+  background-color: #08a4f4;
+  color: #fff;
+}
+
+#cta button:hover p,
+#cta button:hover i {
+  color: #fff;
+}
+
+/* feature-boxes hover */
+.feature-boxes:hover {
+  background-image: linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
+  color: #fff;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+/* Footer hovers */
+.toptrend-nav li:hover {
+  color: #09b8f7;
+  cursor: pointer;
+}
+
+.footer-social i:hover {
+  background-color: #09b8f7;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Pricing sec hovers */
+.single-price:hover {
+  background-image: linear-gradient(2deg, #3ea7ff 0%, #42d1ff 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: -1px 10px 40px -20px rgba(0, 0, 0, 1);
+}
+
+#pricing .single-price:hover button {
+  color: black;
+  background-color: #fff;
+}
+
+.single-price:hover p {
+  color: #fff;
 }
